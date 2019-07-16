@@ -26,50 +26,70 @@
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+
+
 </head>
 
 <body>
 
-    <div class="game">
-        <div class="container center" style="background-color: black;" id="gameConsole">
-            <h1
-                style="text-align: center; font-family: 'Rubik Mono One', sans-serif; font-size: 75px; color: red; font-style: bold; text-shadow: 5px 5px blue">
-                NBA Jam</h1>
-            <h2
-                style="text-align: center; font-family: 'Rubik Mono One', sans-serif; font-size: 25px; color: red; font-style: bold; text-shadow: 1px 1px blue">
-                Hangman Additon</h2>
-            <div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div id="word" style="align-content: center;"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <h1>Wins:</h1>
-                            <h2 id="wins" style="float: left"></h2>
-                        </div>
-                        <div class="col-lg-12">
-                            <h1>Losses:</h1>
-                            <h2 id="losses" style="float: left"></h2>
-                        </div>
-                        <div class="col-lg-12">
-                            <h1>Guesses:</h1>
-                            <h2 id="guesses" style="float: left"></h2>
-                        </div>
-                        <div class="col-lg-12">
-                            <h1>Guesses Left:</h1>
-                            <h2 id="guessesLeft" style="float: left"></h2>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
+    <div id="sticky">
+        <h1 id="timer1">100</h1>
     </div>
 
+    <div class="game">
+
+        <div class="container center" id="gameConsole">
+            <h1>NBA Trivia</h1>
+
+        </div>
+
+        <div id="questions">
+            <div class="center">
+                <h2>Michael Jordan has won how many Championships?</h2>
+                <h3 id="q1r"></h3>
+                <button type="button" class="btn btn-primary" id="a" value="q1" correct="0">10 Championships</button>
+                <button type="button" class="btn btn-primary" id="a" value="q1" correct="0">4 Championships</button>
+                <button type="button" class="btn btn-primary" id="a" value="q1" correct="1">6 Championships</button>
+                <button type="button" class="btn btn-primary" id="a" value="q1" correct="0">8 Championships</button>
+            </div>
+            <div class="center">
+                <h2>Warriors are better than which team?</h2>
+                <h3 id="q2r"></h3>
+                <button type="button" class="btn btn-primary" id="a" value="q2" correct="0">Lakers</button>
+                <button type="button" class="btn btn-primary" id="a" value="q2" correct="0">Raptors</button>
+                <button type="button" class="btn btn-primary" id="a" value="q2" correct="0">Knicks</button>
+                <button type="button" class="btn btn-primary" id="a" value="q2" correct="1">ALL OF THEM</button>
+            </div>
+            <div class="center">
+                <h2>What size shoe does Shaquille O'Neal wear?</h2>
+                <h3 id="q3r"></h3>
+                <button type="button" class="btn btn-primary" id="a" value="q3" correct="1">23</button>
+                <button type="button" class="btn btn-primary" id="a" value="q3" correct="0">18</button>
+                <button type="button" class="btn btn-primary" id="a" value="q3" correct="0">20</button>
+                <button type="button" class="btn btn-primary" id="a" value="q3" correct="0">26</button>
+            </div>
+            <div class="center">
+                <h2>The Best Basketball player of all time?</h2>
+                <h3 id="q4r"></h3>
+                <button type="button" class="btn btn-primary" id="a" value="q4" correct="0">Larry Bird</button>
+                <button type="button" class="btn btn-primary" id="a" value="q4" correct="1">Michael Jordan</button>
+                <button type="button" class="btn btn-primary" id="a" value="q4" correct="0">Senior Lebron</button>
+                <button type="button" class="btn btn-primary" id="a" value="q4" correct="0">Steph Curry</button>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary" id="submit">Submit</button>
+        </div>
+
+
+
+    </div>
+
+    <!-- Java Script -->
     <script src="assets/javascript/app.js"></script>
+
 
 </body>
 
