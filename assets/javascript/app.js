@@ -67,7 +67,7 @@ $(document).ready(function () {
     // On-Click Actions
     //**************************
 
-    $("#a").on("click", question);
+    $(".a").on("click", question);
 
     function question() {
         console.log("Button Clicked: " + this);
