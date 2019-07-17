@@ -140,7 +140,7 @@ $(document).ready(function () {
             correct++
             $('#q4r').text("Correct!");
         } else {
-            $('#q4r').text("Incorrect, 23 is the correct answer");
+            $('#q4r').text("Incorrect, MJ is the correct answer");
             wrong++;
         }
     }
