@@ -118,6 +118,9 @@ $(document).ready(function () {
         console.log(typeof (answer3));
         console.log(typeof (answer4));
 
+        // Stop Timer
+        clearInterval(intervalId);
+
 
         // Determine if question 1 is correct
         if (answer1 == 1) {
@@ -216,7 +219,6 @@ $(document).ready(function () {
         }
     }
 
-
     // Start Timer on Game
     startTimer();
 
@@ -225,28 +227,9 @@ $(document).ready(function () {
 
 
     // Reset Game
+    function reset(){
 
+    }
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
-// //Decide what the last button was clicked for Q3
-// $("#q4b1").on("click", question4);
-// $("#q4b2").on("click", question4);
-// $("#q4b3").on("click", question4);
-// $("#q4b4").on("click", question4);
-
-// function question4(x) {
-//     answer4 = $(this).attr("correct");
-//     console.log(answer4);
-// }
